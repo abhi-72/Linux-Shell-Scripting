@@ -1,0 +1,71 @@
+a unique shell program interprets uuser commnds which are directly entered by user or which are read from a file called shell script or shell program 
+
+shell script are intrepreted but not compiled
+
+to search for shell types , supported by your OS
+cat /etc/shells
+->
+/bin/sh
+/bin/dash
+/bin/bash-> Bourne Again Shell (Improved version of sh)
+/bin/rbash
+
+to know the location of bash
+which bash
+
+to change file to executable
+chmod +x file_name.sh
+
+LANG=C
+
+FLAGS
+        -e :
+        Enable the intrepretation of \c 
+        checks if file exists or not
+
+        -f :
+        checks if reglar file exists
+
+        -d :
+        checks if reglar directory exists
+
+        -s :
+        checks if file is emtpty
+
+        -c :
+        checks if file is character special
+
+        -b :
+        checks if file is blob special
+
+        READ WRITE EXECUTE PERMISSIONS
+                -r :
+                checks if file has read permissions
+
+                -w :
+                checks if file has write permissions
+
+                -x :
+                checks if file has execute permissions
+                
+                
+                
+Userful Questions and Answers (Q&A):
+
+How to get script name inside a script ? 
+$0
+How to check if previous command run successful ?
+$?
+How to get last line from a file ?
+tail -1
+How to get 2nd element from each line from a file, if first equal FIND?
+awk '{ if ($1 == "FIND") print $2}'
+How to debug bash script?
+#!/bin/bash –xv
+What it means by #!/bin/sh or #!/bin/bash at beginning of every script ?
+That line tells which shell to use. #!/bin/bash script to execute using /bin/bash. In case of python script there there will be #!/usr/bin/python
+How to get 10th line from the text file ?
+head -10 file|tail -1
+How to run script in background ?
+add "&" to the end of script
+
